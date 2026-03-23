@@ -9,11 +9,11 @@
     <body>
         <div id="titulo_principal">
         <h1>O Senhor dos Anéis</h1>
-        <h2>Uma das trilogias mais famosas do cinema - Saga Cinematográfica</h2>
+        <h2>Uma das trilogias mais famosas do cinema - Saga Cinematográfica - Pneumoultramicroscopicossilicovulcanoconiótico</h2>
             <nav>
             <a href="index.html"> Home</a>
             <a href="Sinopse.html">Sinopse</a>
-            <a href="Imagem do Filme.html">Imagem do Filme</a>
+            <a href="Imagem do Filme.html">Imagem do Filme</a>  
             <a href="Personagens Principais.html">Personagens Principais</a>
             <a href="Informações.html">Informações</a>
             <a href="Curiosidades.html">Curiosidades</a>
@@ -92,8 +92,55 @@
                         </select><br><br> 
                     </fieldset>
 
-                    <button type="reset">Limpar</button><br><br>
+                    <label for="nivel">Escolha o Nível</label>
+                    <input type="range" max="10" min="1" id="nivel" name="nivel"><br><br>
+
+                    <select id="lista_suspensa" name="lista">
+                        <optgroup label="Teste de Legenda no ComboBox">
+                            <option value="teste 1">Teste 1</option>
+                            <option value="teste 2">Teste 2</option>
+                            <option value="teste 3">Teste 3</option>
+                        </optgroup>
+                        <optgroup label="Teste de Legenda no ComboBox 2">
+                            <option value="teste 4">Teste 4</option>
+                            <option value="teste 5">Teste 5</option>
+                            <option value="teste 6">Teste 6</option>
+                        </optgroup>
+                    </select><br><br>
+
+                    <fieldset>
+                        <legend>Desenvolvimento para a Internet</legend>
+                            <input type="checkbox" name="php" value="php">PHP
+                            <label><input type="checkbox" name="html5" value="html5">HTML5</label>
+                            <label><input type="checkbox" name="css" value="css">CSS</label>
+                            <label><input type="checkbox" name="js" value="js">Javascript</label>
+                    </fieldset>
+
+                    Qual time vencerá a Copa do Mundo?<br>
+                    <input type="text" id="busca_datalist" list="países">
+
+                    <datalist id="países">
+                        <option>Brasil</option>
+                        <option>França</option>
+                        <option>Argentina</option>
+                        <option>Alemanha</option>
+                        <option>Inglaterra</option>
+                        <option>Espanha</option>
+                    </datalist><br><br>
+
+                    <audio controls autoplay loop>
+                        <source src="audio/musica.mp3" type="audio/mp3">               
+                        Navegador não é compatível para executar o áudio         
+                    </audio><br><br>
+
+                    <video width="640" height="360" controls muted poster="img/arara.png">
+                        <source src="videos/videoteste.mp4" type="video/mp4">
+                    </video><br><br>
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Tao1LQceLyE?si=XdrCQMGQrHVSDLPb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
 
                     <button type="submit">Enviar</button>
-                
+                    <button type="reset">Limpar</button>
+
+
                 </form>
