@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <form>
         <div id="titulo_principal">
         <h1>O Senhor dos Anéis</h1>
         <h2>Uma das trilogias mais famosas do cinema - Saga Cinematográfica</h2>
@@ -25,8 +26,8 @@
 
             <form action="processa.php" method="get" autocomplete="off">
 
-            <label for="nomepessoa">Nome na Terra Média:</label>
-            <input type="text" name="nomepessoa" id="nomepessoa" minlength="3" maxlength="15" required placeholder="Ex: Aragorn"><br><br>
+            <label for="nome">Nome na Terra Média:</label>
+            <input type="text" name="nome" id="nome" minlength="3" maxlength="15" required placeholder="Ex: Aragorn"><br><br>
 
             <label for="email">Corvo Eletrônico (Email):</label>
             <input type="email" name="email" id="email" required placeholder="Ex: crow@gmail.com"><br><br>
@@ -49,8 +50,8 @@
                     <option value="Filme 3">O Senhor dos Anéis - O Retorno do Rei</option>
                 </select></label><br><br>
 
-            <label for="lista_suspensa">Escolha um local da Terra Média:</label>
-            <select id="lista_suspensa" name="lista">
+            <label for="cidade">Escolha um local da Terra Média:</label>
+            <select id="cidade" name="cidade">
                 <optgroup label="Reino dos Homens">
                     <option value="gondor">Gondor</option>
                     <option value="rohan">Rohan</option>
@@ -102,6 +103,7 @@
             <textarea cols="50" rows="10" name="mensagem" id="mensagem" placeholder="Escreva sua missão..."></textarea><br>
 
             <button type="reset">Apagar Pergaminho</button>
-            <button type="submit">Enviar para Valfenda</button>        
+            <button type="submit">Enviar para Valfenda</button>
+            </form>        
         </body>
 </html>
