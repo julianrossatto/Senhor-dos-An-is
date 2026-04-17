@@ -6,9 +6,34 @@
     background-color: #2F4F2F;
     color: white
     }
-    #layout{
-    display: flex;
-    }
+    
     .rodape{
     text-align: center;
+    }
+
+    body{
+        /*Topografia CSS*/
+        background-color: Rgb(0,0,0); /*Cor do Fundo*/
+        color: Rgb(255,255,255); /*Cor da Fonte*/
+        font-family: "Roboto", sans-serif; /*Fonte do Texto*/
+        font-size: 30px;
+    }
+
+    #layout{
+        font-size: 1em; /*Herda o tamanho do pai dele (no nosso caso do body), com um multiplicador*/
+        display: flex;
+        font-style: normal; /*Estilo da fonte: italic - normal - oblique*/
+        line-height: normal; /*Espaçamento entre as linhas*/
+        font-weight: 100; /*Grossura das letras, bold por exemplo e lighter*/
+        text-transform: none; /*capitalização do texto: uppercase - lowercase e capitalize*/
+        text-decoration: underline; /*Sublinhação superior ou inferior das palavras, por exemplo underline - overline*/
+        word-spacing: 5px; /*espaçamento entre palavras*/
+        letter-spacing: 20px; /*espaçamento entre letras*/
+        text-indent: 20px; /*espaçamento de paragrafo primeira linha*/
+        text-align: justify; /*alinhamento do texto, no meio, na esquerda, justificado... */
+    } 
+
+    nav a{
+        text-decoration: none;
+
     }
