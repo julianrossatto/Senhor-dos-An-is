@@ -4,6 +4,12 @@
     }
     .titulo_secundário{
     background-color: #2F4F2F;
+    border-radius: 25px;
+    margin: 10px;
+    margin-right: 25px;
+    font-family: "Oswald", sans-serif; /*Fonte do Texto*/
+    text-align: center;
+    font-size: 45px;
     color: white
     }
     
@@ -15,25 +21,36 @@
         /*Topografia CSS*/
         background-color: Rgb(0,0,0); /*Cor do Fundo*/
         color: Rgb(255,255,255); /*Cor da Fonte*/
-        font-family: "Roboto", sans-serif; /*Fonte do Texto*/
-        font-size: 30px;
+        font-family: "Amarante", serif; /*Fonte do Texto*/
+        font-size: 25px;
     }
 
     #layout{
         font-size: 1em; /*Herda o tamanho do pai dele (no nosso caso do body), com um multiplicador*/
-        display: flex;
+        display: flex;  
+        flex-direction: row; /*usado para definir a direção dos elementos do display; row ou columns*/
         font-style: normal; /*Estilo da fonte: italic - normal - oblique*/
         line-height: normal; /*Espaçamento entre as linhas*/
-        font-weight: 100; /*Grossura das letras, bold por exemplo e lighter*/
+        font-weight: normal; /*Grossura das letras, bold por exemplo e lighter*/
         text-transform: none; /*capitalização do texto: uppercase - lowercase e capitalize*/
-        text-decoration: underline; /*Sublinhação superior ou inferior das palavras, por exemplo underline - overline*/
-        word-spacing: 5px; /*espaçamento entre palavras*/
-        letter-spacing: 20px; /*espaçamento entre letras*/
-        text-indent: 20px; /*espaçamento de paragrafo primeira linha*/
+        text-decoration: none; /*Sublinhação superior ou inferior das palavras, por exemplo underline - overline*/
+        word-spacing: normal; /*espaçamento entre palavras*/
+        letter-spacing: normal; /*espaçamento entre letras*/
+        text-indent: 1em; /*espaçamento de paragrafo primeira linha*/
         text-align: justify; /*alinhamento do texto, no meio, na esquerda, justificado... */
-    } 
+        border-style: inset; border-color:#8B6F1E; border-radius: 25px; border-width: 16px; border-width: 20px; /*estilização da borda*/
+
+        margin: 15px; /*margem do lado externo da borda*/;
+        padding: 25px; /*margem do lado interno da borda*/
+    }
+
+    .teste_display{
+        background-color: #8B6F1E;
+        display: block;
+        width: 1000px;
+        height: 300px;
+    }
 
     nav a{
         text-decoration: none;
-
     }
