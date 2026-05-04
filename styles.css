@@ -1,6 +1,11 @@
     #titulo_principal{
-    background-color: #8B6F1E;
-    color: white
+    color: white;
+    font-size: 15px;
+    background-image: url(img/testesenhor.png);
+    border-radius: 25px;
+    text-shadow: 5px 3px 3px black;
+    text-align: center;
+    background-repeat: no-repeat;
     }
     .titulo_secundário{
     background-color: #2F4F2F;
@@ -9,7 +14,7 @@
     margin-right: 25px;
     font-family: "Oswald", sans-serif; /*Fonte do Texto*/
     text-align: center;
-    font-size: 45px;
+    font-size: 15px;
     color: white
     }
     
@@ -51,6 +56,81 @@
         height: 300px;
     }
 
+    #teste_estilo_lista_ul{
+        list-style-type: square; /*define o estilo de marcador da lista, quadrado, circulo, none*/
+
+    }
+
+    #teste_estilo_lista_ol{
+        list-style-type: upper-roman; /*greek, lower-alpha, lower-roman, decimal... define o tipo da lista ordenada*/
+        list-style-position: inside;
+        list-style-image: url(img/seta_direita_vermelha.png) /*serve para definir por exemplo uma seta na lista*/
+    }
+
+    li{
+        border: 3px solid orange;
+        list-style-position: outside; serve para dizer se o marcador da lista faz parte ou não da lista, no caso ficando dentro ou fora da borda; outside ou inside*/
+    }
+
+    #impacto{
+        background-image: url(img/senhordosaneis_fundo.jpg);
+        background-repeat: no-repeat /*serve para definir se a imagem, em determinadas resoluções, irá repetir, e se sim, de que forma - 'repeat-x' - 'repeat-y' - no-repeat*/;
+        background-position::content;   
+        background-size: cover;
+        background-attachment: scroll;
+        position: relative;
+
+    }
+
+    #sumario{
+        text-align: center;
+        background-color: #2F4F2F;
+        font-size: large;
+        color: black;
+        text-decoration: none  
+    }
+
+    .noticia{
+        border: solid 3px white;
+        width: 500px;
+        position: fixed;
+        margin-top: 300px;
+        margin-left: 150px;
+        align-content: center;
+        box-shadow: 3px 3px 3px 3px;    
+        overflow: auto;
+    }
+
+    .um{
+        background-color: green;
+        top: 0px;
+        left: 0px;
+
+    }
+
+    .dois{
+        background-color: yellow;
+        top: 0px;
+        left: 550px;
+    }
+
+    .tres{
+        background-color: blue;
+        top: 0px;
+        left: 1100px;
+    }
+
+    a:link{color: white;}
+
+    a:visited{color: white;}
+
+    a:hover{color: orange}
+
     nav a{
         text-decoration: none;
     }
+
+html, body{
+    touch-action: none; /* Permite rolar para cima/baixo, mas bloqueia zoom e rolagem horizontal */
+    /* Use 'none' para bloquear rolagem e zoom totalmente: touch-action: none; */
+}
