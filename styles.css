@@ -7,6 +7,7 @@
     text-align: center;
     background-repeat: no-repeat;
     }
+
     .titulo_secundário{
     background-color: #2F4F2F;
     border-radius: 25px;
@@ -44,7 +45,6 @@
         text-indent: 1em; /*espaçamento de paragrafo primeira linha*/
         text-align: justify; /*alinhamento do texto, no meio, na esquerda, justificado... */
         border-style: inset; border-color:#8B6F1E; border-radius: 25px; border-width: 16px; border-width: 20px; /*estilização da borda*/
-
         margin: 15px; /*margem do lado externo da borda*/;
         padding: 25px; /*margem do lado interno da borda*/
     }
@@ -58,7 +58,6 @@
 
     #teste_estilo_lista_ul{
         list-style-type: square; /*define o estilo de marcador da lista, quadrado, circulo, none*/
-
     }
 
     #teste_estilo_lista_ol{
@@ -69,17 +68,16 @@
 
     li{
         border: 3px solid orange;
-        list-style-position: outside; serve para dizer se o marcador da lista faz parte ou não da lista, no caso ficando dentro ou fora da borda; outside ou inside*/
+        list-style-position: outside; /*serve para dizer se o marcador da lista faz parte ou não da lista, no caso ficando dentro ou fora da borda; outside ou inside*/
     }
 
     #impacto{
         background-image: url(img/senhordosaneis_fundo.jpg);
         background-repeat: no-repeat /*serve para definir se a imagem, em determinadas resoluções, irá repetir, e se sim, de que forma - 'repeat-x' - 'repeat-y' - no-repeat*/;
-        background-position::content;   
+        background-position: content;   
         background-size: cover;
         background-attachment: scroll;
         position: relative;
-
     }
 
     #sumario{
@@ -87,7 +85,7 @@
         background-color: #2F4F2F;
         font-size: large;
         color: black;
-        text-decoration: none  
+        text-decoration: none;  
     }
 
     .noticia{
@@ -100,12 +98,64 @@
         box-shadow: 3px 3px 3px 3px;    
         overflow: auto;
     }
+    
+    .transicao{
+        background-color: rgb(255, 188, 62);
+        border: solid 3px orange;
+        color: black;
+        height: 300px;
+        width: 300px;   
+        transition-property: all;
+        transition-duration: 1s;
+    }
+
+    .transicao:hover{
+        background-color: orange;
+        border: solid 3px white;
+        color: black;
+        transition-duration: 1s;
+        transition-timing-function: ease;
+    }
+
+    #email:focus{
+        background-color: orange;
+        color: white;
+    }
+
+    h1{
+        animation-name: multicolor;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes multicolor{
+        from {color: rgb(255, 255, 255);}
+        to {color: orange;}
+    }
+
+    @keyframes foguete{
+        0% {margin-left: 10%; transform: rotate(45deg)}
+        25% {margin-left: 80%; transform: rotate(45deg)}
+        50% {margin-left: 80%; transform: rotate(-140deg)}
+        75% {margin-left: 10%; transform: rotate(-140deg)}
+        100% {margin-left: 10%; transform: rotate(45deg)}
+        
+    }
+
+    .animacao img{
+        display: block;
+        animation: foguete;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        
+    }
 
     .um{
         background-color: green;
         top: 0px;
         left: 0px;
-
     }
 
     .dois{
@@ -124,7 +174,10 @@
 
     a:visited{color: white;}
 
-    a:hover{color: orange}
+    a:hover{
+        color: orange;
+        opacity: 1
+    }
 
     nav a{
         text-decoration: none;
